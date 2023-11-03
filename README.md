@@ -4,3 +4,5 @@
 
 ## Salvando modificações no git
 ## Mais uma coisaS
+
+* uso do comando git restore
