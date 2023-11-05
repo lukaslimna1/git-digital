@@ -6,3 +6,5 @@
 ## Mais uma coisaS
 
 * uso do comando git restore
+
+* comando git push
