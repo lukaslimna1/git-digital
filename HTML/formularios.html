@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <main>
+        <h1>Formulario</h1>
+        <hr>
+        <br>
+        <form action="" method="get">
+            <!--Atributos de Input (Vincular um id igual a Label)- text (Caixa de Texto), passowrd (Deixa oculto os caracteres),
+             email (), date (define dia mes e ano para ser colocado), Time (Define campo de hora), number (só aceita numeros),
+            File (Pode escolher um arquivo para upload), URL (Colocar um Link), Color (Cria caixa de seleção de Cor), Range (Cria barra deslizante de 0 a 100)  -->
+            <!--Atributo Label - Aparece proximo a input para especificar o que tem que ser colocado dentro-->
+            <!--Placeholder um texto informativo (Sugestão) dentro da caixa de texto-->
+            <!--Value - define o valor inicial dentro da caixa de texto-->
+            <!--Name - propriedade para identificar os campos do formulário com o JS -->
+            <div>
+                <label for="texto">Nome:</label>
+                <input type="text" id="texto" placeholder="Informe o seu nome..." name="nome">
+            </div>
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha">
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email">
+            </div>     
+            <div>
+                <label for="data">Data de Nascimento</label>
+                <input type="date" id="data" name="data">
+            </div>       
+            <div>
+                <label for="hora">Horário</label>
+                <input type="time" name="hora" id="hora">
+            </div>
+            <div>
+                <label for="numero">numero</label>
+                <input type="number" id="numero" name="numero">
+            </div>
+            <div>
+                <label for="file"></label>
+                <input type="file" id="file" name="file">
+            </div>
+            <div>
+                <label for="url"></label>
+                <input type="url" id="url" name="url">
+            </div>
+            <div>
+                <label for="cor"></label>
+                <input type="color" id="cor" name="cor">
+            </div>
+            <div>
+                <label for="range"></label>
+                <input type="range" id="range" name="range" value="100" max="200" min="100" >
+            </div>
+            <div>
+                <label for="checkbox"></label>
+                <input type="checkbox" id="checkbox" name="checkbox" checked>
+            </div>
+            <div>
+                <label for="radio "></label>
+                <input type="radio" id="radio" name="radio">
+            </div>
+            <div>
+                <label for="reset"></label>
+                <input type="reset" id="reset" name="reset">
+            </div>
+            <div>
+                <label for="submit"></label>
+                <input type="submit" id="submit" name="submit">
+            </div>
+            <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+            <select name="select" id="select">
+                <option value="" disabled selected>Selecione uma das Opções</option>
+                <option value="receita">Receita</option>
+                <option value="despesas">Despesa</option>
+                <option value="transferencia">Transferecia</option>
+            </select>
+        </form>
+    </main>
+</body>
+</html>
